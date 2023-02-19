@@ -19,6 +19,7 @@ const Navbar = () => {
 
 const TitleDiv = styled.div`
     display: flex;
+    justify-content: flex-start;
 `;
 const Red = styled.h1`
     color: red;
@@ -45,11 +46,13 @@ const Div = styled.div`
     gap: 2em;
 `;
 const Container = styled.div`
-    padding: 10px 10%;
+    padding: 2% 0;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 2;
+    background-color: black;
 `;
 export default Navbar;

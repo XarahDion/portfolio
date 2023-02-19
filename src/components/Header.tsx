@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from "../assets/matt-wang.jpg";
+import img from "../assets/xarah-linkedin.jpg";
 
 const Header = () => {
     return (
@@ -10,7 +10,7 @@ const Header = () => {
                     Hi, I'm <span>Xarah </span> Dion from Quebec, Canada.
                 </h1>
             </Text>
-            <Img src={img} alt="Matt Wang" />
+            <Img src={img} alt="Xarah" />
         </Main>
     );
 };
@@ -32,17 +32,28 @@ const Main = styled.div`
     width: 100%;
     height: 100vh;
     position: relative;
-    padding: 0 10%;
     overflow-x: hidden;
 `;
 
 const Img = styled.img`
-    max-width: 70vw;
+    max-width: 30vw;
+    border-radius: 10%;
     position: absolute;
-    z-index: -2;
-    background-size: cover;
-    left: 70%;
-    transform: translate(-50%, 0);
+    right: 18%;
+    animation: 2s ease-out 1s 1 slideInRight;
+    &&:hover {
+        opacity: 0.8;
+        transition: 0.5s;
+    }
+    @keyframes slideInRight {
+        0% {
+            transform: translateX(60%);
+            opacity: 0.1;
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
 `;
 
 export default Header;
