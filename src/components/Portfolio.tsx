@@ -7,29 +7,25 @@ import { GitHub, ExternalLink } from "react-feather";
 
 const Portfolio = () => {
     return (
-        <Main id="portfolio">
+        <Main>
+            <Anchor>
+                <span id="portfolio"></span>
+            </Anchor>
             <div>
                 <h1>My Work</h1>
                 <WorkList>
                     <Work>
                         <Img src={project1} />
                         <Layer>
-                            <h3>Earth Trotter</h3>
+                            <h2>Earth Trotter</h2>
                             <Description>
-                                Full-stack MERN App for logging travels,
-                                displayed as markers on a an interactive world
+                                Full-stack MERN App for logging travels, displayed as markers on a an interactive world
                                 map.
                             </Description>
-                            <a
-                                href="https://github.com/XarahDion/final-project"
-                                target="_blank"
-                            >
+                            <a href="https://github.com/XarahDion/final-project" target="_blank">
                                 <GitHub size={30} />
                             </a>
-                            <a
-                                href="https://www.earth-trotter.xarahdion.com/"
-                                target="_blank"
-                            >
+                            <a href="https://www.earth-trotter.xarahdion.com/" target="_blank">
                                 <ExternalLink size={30} />
                             </a>
                         </Layer>
@@ -37,21 +33,14 @@ const Portfolio = () => {
                     <Work>
                         <Img src={project2} />
                         <Layer>
-                            <h3>Wearably</h3>
+                            <h2>Wearably°</h2>
                             <Description>
-                                E-commerce MERN stack app, by Anthony Kameka,
-                                Mariana Oka, Francis Vézina and I.
+                                E-commerce MERN stack app, by Anthony Kameka, Mariana Oka, Francis Vézina and I.
                             </Description>
-                            <a
-                                href="https://github.com/XarahDion/e-commerce"
-                                target="_blank"
-                            >
+                            <a href="https://github.com/XarahDion/e-commerce" target="_blank">
                                 <GitHub size={30} />
                             </a>
-                            <a
-                                href="https://e-commerce-zl6k.onrender.com/"
-                                target="_blank"
-                            >
+                            <a href="https://e-commerce-zl6k.onrender.com/" target="_blank">
                                 <ExternalLink size={30} />
                             </a>
                         </Layer>
@@ -59,21 +48,14 @@ const Portfolio = () => {
                     <Work>
                         <Img src={project4} />
                         <Layer>
-                            <h3>Landing Page</h3>
+                            <h2>Landing Page</h2>
                             <Description>
-                                A fully responsive landing page built along
-                                modern UI/UX standards with pure CSS3.
+                                A fully responsive landing page built along modern UI/UX standards with pure CSS3.
                             </Description>
-                            <a
-                                href="https://github.com/XarahDion/landing-page"
-                                target="_blank"
-                            >
+                            <a href="https://github.com/XarahDion/landing-page" target="_blank">
                                 <GitHub size={30} />
                             </a>
-                            <a
-                                href="https://landing-page-u316.onrender.com/"
-                                target="_blank"
-                            >
+                            <a href="https://landing-page-u316.onrender.com/" target="_blank">
                                 <ExternalLink size={30} />
                             </a>
                         </Layer>
@@ -81,15 +63,11 @@ const Portfolio = () => {
                     <Work>
                         <Img src={project3} />
                         <Layer>
-                            <h3>Current Weather</h3>
+                            <h2>Current Weather</h2>
                             <Description>
-                                A clone of The Weather Network's weather app
-                                built with React Native and Expo.
+                                A clone of The Weather Network's weather app built with React Native and Expo.
                             </Description>
-                            <a
-                                href="https://github.com/XarahDion/current-weather-app"
-                                target="_blank"
-                            >
+                            <a href="https://github.com/XarahDion/current-weather-app" target="_blank">
                                 <GitHub size={30} />
                             </a>
                             <a
@@ -105,7 +83,16 @@ const Portfolio = () => {
         </Main>
     );
 };
-
+const Anchor = styled.h2`
+    position: relative;
+    #portfolio {
+        position: absolute;
+        left: 0;
+        top: -80px;
+        height: 0;
+        width: 0;
+    }
+`;
 const Description = styled.p`
     font-size: 14px;
     margin: 20px 0;
@@ -136,6 +123,7 @@ const Img = styled.img`
     border-radius: 30px;
     display: block;
     transition: transform 0.7s;
+    border: 5px solid lightgray;
 `;
 const Work = styled.div`
     border-radius: 20px;
@@ -154,9 +142,9 @@ const Work = styled.div`
 `;
 const WorkList = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 24px;
 `;
 const Main = styled.div`
     padding: 50px 0;

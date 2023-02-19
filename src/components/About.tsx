@@ -4,7 +4,10 @@ import Tabs from "./Tabs";
 
 const About = () => {
     return (
-        <Main id="about">
+        <Main>
+            <Anchor>
+                <span id="about"></span>
+            </Anchor>
             <div>
                 <Row>
                     <Col1>
@@ -13,14 +16,11 @@ const About = () => {
                     <Col2>
                         <Title>About Me</Title>
                         <Text>
-                            Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium, totam
-                            rem aperiam, eaque ipsa quae ab illo inventore
-                            veritatis et quasi architecto beatae vitae dicta
-                            sunt explicabo. Nemo enim ipsam voluptatem quia
-                            voluptas sit aspernatur aut odit aut fugit, sed quia
-                            consequuntur magni dolores eos qui ratione
-                            voluptatem sequi nesciunt.
+                            Loving both the frontend and backend, interested in learning new technologies, frameworks
+                            and methods. Meticulous about writing clean code along the software design principles.
+                            Focused on evaluating user needs and problems and applying actionable strategies. Curious
+                            learner with an extensive collaborative and music production background. Currently learning:
+                            TypeScript and AWS.
                         </Text>
                         <div>
                             <Tabs />
@@ -32,6 +32,16 @@ const About = () => {
     );
 };
 
+const Anchor = styled.h2`
+    position: relative;
+    #about {
+        position: absolute;
+        left: 0;
+        top: -120px;
+        height: 0;
+        width: 0;
+    }
+`;
 const Text = styled.p`
     color: #ababab;
 `;

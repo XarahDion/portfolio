@@ -41,6 +41,10 @@ const Tabs = () => {
                     <span>CI/CD</span>
                     <br></br>Version control and deployment
                 </li>
+                <li>
+                    <span>CMS</span>
+                    <br></br>Freelance services with WordPress
+                </li>
             </Skills>
             <Education tab={tabState}>
                 <li>
@@ -59,8 +63,7 @@ const Tabs = () => {
             <Music tab={tabState}>
                 <li>
                     <span>2019 Xarah Dion - Plein Nord</span>
-                    <br></br>Full length album, self-released on vinyl and
-                    digital
+                    <br></br>Full length album, self-released on vinyl and digital
                 </li>
                 <li>
                     <span>2016 Xarah Dion - Fugitive</span>
@@ -68,9 +71,11 @@ const Tabs = () => {
                 </li>
                 <li>
                     <span>2014 Xarah Dion - Le mal nécessaire</span>
-                    <br></br>Full length album, self-released on vinyl and
-                    digital
+                    <br></br>Full length album, self-released on vinyl and digital
                 </li>
+                <a href="https://xarahdion.com/" target="_blank">
+                    See more
+                </a>
             </Music>
         </Main>
     );
@@ -89,7 +94,7 @@ const Skills = styled.ul<TabProps>`
     display: ${(props) => (props.tab === "skills" ? "block" : "none")};
     span {
         color: #ba0e0e;
-        font-size: 20px;
+        font-size: 18px;
     }
     li {
         margin: 10px 0;
@@ -100,12 +105,24 @@ const Education = styled(Skills)`
 `;
 const Music = styled(Skills)`
     display: ${(props) => (props.tab === "music" ? "block" : "none")};
+    a {
+        display: block;
+        width: fit-content;
+        border: 1px solid red;
+        padding: 10px 28px;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        transition: background 0.8s;
+    }
+    a:hover {
+        background-color: #ba0e0e;
+    }
 `;
 const Links = styled.a`
-    color: #ababab;
     margin: 0 50px 10px 0;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 700;
     cursor: pointer;
     position: relative;
     &::after {

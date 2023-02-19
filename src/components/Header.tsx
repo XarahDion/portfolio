@@ -37,9 +37,9 @@ const Main = styled.div`
 
 const Img = styled.img`
     max-width: 30vw;
-    border-radius: 10%;
+    border-radius: 6%;
     position: absolute;
-    right: 18%;
+    right: 16%;
     animation: 2s ease-out 1s 1 slideInRight;
     @keyframes slideInRight {
         0% {

@@ -5,12 +5,12 @@ const Navbar = () => {
         <Container>
             <TitleDiv>
                 <Red>X</Red>
-                <Title>arah.</Title>
+                <h1>arah.</h1>
             </TitleDiv>
             <Div>
                 <Link href="#">Home</Link>
-                <Link href="#">About</Link>
-                <Link href="#">Projects</Link>
+                <Link href="#about">About</Link>
+                <Link href="#portfolio">Projects</Link>
                 <Link href="#">Contact</Link>
             </Div>
         </Container>
@@ -24,7 +24,6 @@ const TitleDiv = styled.div`
 const Red = styled.h1`
     color: red;
 `;
-const Title = styled.h1``;
 const Link = styled.a`
     position: relative;
     &::after {
@@ -46,13 +45,14 @@ const Div = styled.div`
     gap: 2em;
 `;
 const Container = styled.div`
-    padding: 2% 0;
+    padding: 1% 0;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 2;
     background-color: black;
 `;
+
 export default Navbar;
