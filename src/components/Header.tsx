@@ -3,7 +3,7 @@ import img from "../assets/xarah-linkedin.jpg";
 
 const Header = () => {
     return (
-        <Main>
+        <Main id="home">
             <Text>
                 <p>Full Stack Web Developer</p>
                 <h1>
@@ -41,10 +41,6 @@ const Img = styled.img`
     position: absolute;
     right: 18%;
     animation: 2s ease-out 1s 1 slideInRight;
-    &&:hover {
-        opacity: 0.8;
-        transition: 0.5s;
-    }
     @keyframes slideInRight {
         0% {
             transform: translateX(60%);
