@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import img from "../assets/xarah-photobooth.jpg";
+import Tabs from "./Tabs";
 
 const About = () => {
     return (
@@ -25,13 +26,8 @@ const About = () => {
                             tempora incidunt ut labore et dolore magnam aliquam
                             quaerat voluptatem.{" "}
                         </Text>
-                        <Tabs>
-                            <Links>Skills</Links>
-                            <Links>Education</Links>
-                            <Links>Music</Links>
-                        </Tabs>
                         <Contents>
-                            
+                            <Tabs/>
                         </Contents>
                     </Col2>
                 </Row>
@@ -40,33 +36,7 @@ const About = () => {
     );
 };
 
-const Contents = styled.div`
-    
-`
-const Links = styled.p`
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-    &::after {
-        content: "";
-        width: 0%;
-        height: 3px;
-        background: #ff004f;
-        position: absolute;
-        left: 0;
-        bottom: -6px;
-        transition: 0.5s;
-    }
-    &:hover::after {
-        width: 100%;
-    }
-`;
-const Tabs = styled.div`
-    display: flex;
-    margin: 20px 0 40px;
-`;
+const Contents = styled.div``;
 const Text = styled.p`
     color: #ababab;
 `;
