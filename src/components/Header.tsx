@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <Main id="home">
             <Text>
-                <p>Full Stack Web Developer</p>
+                <h3>Full Stack Web Developer</h3>
                 <h1>
                     Hi, I'm <span>Xarah </span> Dion from Quebec, Canada.
                 </h1>
@@ -16,34 +16,44 @@ const Header = () => {
 };
 
 const Text = styled.div`
-    margin-top: 15%;
-    font-size: 30px;
+    margin-top: 20%;
     position: absolute;
     max-width: 40%;
     h1 {
-        font-size: 40px;
-        margin-top: 3%;
+        margin-top: 6%;
     }
     span {
         background: var(--gradient-text);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 800;
+    }
+    @media screen and (max-width: 1000px) {
+        max-width: 50%;
     }
 `;
 const Main = styled.div`
     width: 100%;
     height: 100vh;
     position: relative;
-    overflow-x: hidden;
+    @media screen and (max-width: 1000px) {
+        height: 70vh;
+    }
+    @media screen and (max-width: 800px) {
+        height: 60vh;
+    }
+    @media screen and (max-width: 800px) {
+        height: 50vh;
+    }
 `;
 
 const Img = styled.img`
     margin-top: 5%;
-    max-width: 26vw;
+    max-width: 35%;
     border-radius: 6%;
     position: absolute;
-    right: 16%;
+    right: 12%;
     animation: 2s ease-out 1s 1 slideInRight;
     @keyframes slideInRight {
         0% {
@@ -53,6 +63,10 @@ const Img = styled.img`
         100% {
             transform: translateX(0);
         }
+    }
+    @media screen and (max-width: 1000px) {
+        max-width: 40%;
+        right: 0%;
     }
 `;
 

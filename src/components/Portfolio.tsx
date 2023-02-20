@@ -23,10 +23,10 @@ const Portfolio = () => {
                                 map.
                             </Description>
                             <a href="https://github.com/XarahDion/final-project" target="_blank">
-                                <GitHub size={30} />
+                                <GitHub size={28} />
                             </a>
                             <a href="https://www.earth-trotter.xarahdion.com/" target="_blank">
-                                <ExternalLink size={30} />
+                                <ExternalLink size={28} />
                             </a>
                         </Layer>
                     </Work>
@@ -38,10 +38,10 @@ const Portfolio = () => {
                                 E-commerce MERN stack app, by Anthony Kameka, Mariana Oka, Francis Vézina and I.
                             </Description>
                             <a href="https://github.com/XarahDion/e-commerce" target="_blank">
-                                <GitHub size={30} />
+                                <GitHub size={28} />
                             </a>
                             <a href="https://e-commerce-zl6k.onrender.com/" target="_blank">
-                                <ExternalLink size={30} />
+                                <ExternalLink size={28} />
                             </a>
                         </Layer>
                     </Work>
@@ -53,10 +53,10 @@ const Portfolio = () => {
                                 A fully responsive landing page built along modern UI/UX standards with pure CSS3.
                             </Description>
                             <a href="https://github.com/XarahDion/landing-page" target="_blank">
-                                <GitHub size={30} />
+                                <GitHub size={28} />
                             </a>
                             <a href="https://landing-page-u316.onrender.com/" target="_blank">
-                                <ExternalLink size={30} />
+                                <ExternalLink size={28} />
                             </a>
                         </Layer>
                     </Work>
@@ -68,13 +68,13 @@ const Portfolio = () => {
                                 A clone of The Weather Network's weather app built with React Native and Expo.
                             </Description>
                             <a href="https://github.com/XarahDion/current-weather-app" target="_blank">
-                                <GitHub size={30} />
+                                <GitHub size={28} />
                             </a>
                             <a
                                 href="https://appetize.io/embed/8bnmakzrptf1hv9dq7v7bnteem?autoplay=false&debug=true&device=iphone12&deviceColor=black&embed=true&orientation=portrait&scale=73&screenOnly=false&xDocMsg=true&xdocMsg=true&params=%7B%22EXDevMenuDisableAutoLaunch%22%3Atrue%2C%22EXKernelLaunchUrlDefaultsKey%22%3A%22exp%3A%2F%2Fexp.host%2F%40xarahdion%2F8929c3%2B3Fqz_6piO5%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D"
                                 target="_blank"
                             >
-                                <ExternalLink size={30} />
+                                <ExternalLink size={28} />
                             </a>
                         </Layer>
                     </Work>
@@ -88,7 +88,7 @@ const Anchor = styled.h2`
     #portfolio {
         position: absolute;
         left: 0;
-        top: -80px;
+        top: -90px;
         height: 0;
         width: 0;
     }
@@ -97,12 +97,18 @@ const Description = styled.p`
     font-size: 14px;
     margin: 20px 0;
     font-weight: 500;
+    @media screen and (max-width: 1250px) {
+        font-size: 12px;
+    }  
+    @media screen and (max-width: 900px) {
+        font-size: 14px;
+    }   
 `;
 const Layer = styled.div`
     position: absolute;
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #450576e3);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #450576e3);
     border-radius: 20px;
     left: 0;
     top: 0;
@@ -116,6 +122,26 @@ const Layer = styled.div`
     a {
         color: transparent;
         margin-bottom: 20px;
+    }
+    @media screen and (max-width: 1250px) {
+        h2 {
+            font-size: 1em;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        h2 {
+            font-size: 0.8em;
+            font-weight: 700;
+        }
+    }
+    @media screen and (max-width: 900px) {
+        h2 {
+            font-size: 1.4em;
+            font-weight: 700;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        margin-bottom: 10px;
     }
 `;
 const Img = styled.img`
@@ -144,10 +170,18 @@ const WorkList = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
     grid-gap: 4%;
-    margin-top: 2%;
+    margin-top: 4%;
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        grid-gap: 6%;
+    }
 `;
 const Main = styled.div`
-    padding: 50px 0;
+    width: 100%;
+    height: 90vh;
+    @media screen and (max-width: 1000px) {
+        height: auto;
+    }
 `;
 
 export default Portfolio;

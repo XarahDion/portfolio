@@ -3,9 +3,7 @@ import styled from "styled-components";
 const Navbar = () => {
     return (
         <Container>
-            <TitleDiv>
-                <h1>Xarah.</h1>
-            </TitleDiv>
+            <h1>Xarah.</h1>
             <Div>
                 <Link href="#">Home</Link>
                 <Link href="#about">About</Link>
@@ -16,16 +14,6 @@ const Navbar = () => {
     );
 };
 
-const TitleDiv = styled.div`
-    display: flex;
-    justify-content: flex-start;
-    h1 {
-        background: var(--gradient-text);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 800;
-    }
-`;
 const Link = styled.a`
     position: relative;
     &::after {
@@ -44,7 +32,10 @@ const Link = styled.a`
 `;
 const Div = styled.div`
     display: flex;
-    gap: 2em;
+    gap: 2.6em;
+    @media screen and (max-width: 800px) {
+        gap: 2em;
+    }
 `;
 const Container = styled.div`
     padding: 1% 10%;
@@ -59,6 +50,13 @@ const Container = styled.div`
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
+    h1 {
+        background: var(--gradient-text);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 800;
+    }
 `;
 
 export default Navbar;

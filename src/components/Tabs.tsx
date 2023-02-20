@@ -84,6 +84,10 @@ const Tabs = () => {
 const Div = styled.div`
     display: flex;
     margin-bottom: 2%;
+    @media screen and (max-width: 800px) {
+        margin-top: 8%;
+        margin-bottom: 4%;
+    }
 `;
 const Skills = styled.ul<TabProps>`
     color: #ababab;
@@ -94,13 +98,27 @@ const Skills = styled.ul<TabProps>`
     display: ${(props) => (props.tab === "skills" ? "block" : "none")};
     span {
         background: var(--gradient-text);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 18px;
         font-weight: 700;
     }
     li {
-        margin: 10px 0;
+        margin: 2% 0;
+    }
+    @media screen and (max-width: 1000px) {
+        span {
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        span {
+            font-size: 14px;
+        }
+        li {
+            font-size: 12px;
+        }
     }
 `;
 const Education = styled(Skills)`
@@ -109,14 +127,15 @@ const Education = styled(Skills)`
 const Music = styled(Skills)`
     display: ${(props) => (props.tab === "music" ? "block" : "none")};
     a {
+        margin-top: 4%;
         display: block;
         width: fit-content;
-        box-shadow: 0 0 0 1px #FB286B ;
+        box-shadow: 0 0 0 1px #9000ffad;
         padding: 10px 28px;
         border-radius: 10px;
         font-weight: 500;
         font-size: 16px;
-        transition: background 0.8s;
+        transition: 0.8s;
     }
     a:hover {
         background: var(--gradient-bar);
@@ -125,9 +144,9 @@ const Music = styled(Skills)`
     }
 `;
 const Links = styled.a`
-    margin: 0 50px 10px 0;
-    font-size: 20px;
-    font-weight: 700;
+    margin: 0 10% 2% 0;
+    font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
     position: relative;
     &::after {
@@ -145,6 +164,12 @@ const Links = styled.a`
     }
     .active {
         display: none;
+    }
+    @media screen and (max-width: 1000px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 14px;
     }
 `;
 const Main = styled.div`

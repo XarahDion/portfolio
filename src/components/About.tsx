@@ -47,16 +47,35 @@ const Img = styled.img`
     border-radius: 5%;
 `;
 const Title = styled.h1`
-    padding-bottom: 12px;
+    padding-bottom: 2%;
 `;
 const Col2 = styled.div`
     flex-basis: 60%;
     p {
         color: #ababab;
+        text-align: justify;
+        line-height: 1.2;
+    }
+    @media screen and (max-width: 1000px) {
+        p {
+            font-size: 14px;
+            line-height: 1.3;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        flex-basis: 55%;
+    }
+    @media screen and (max-width: 800px) {
+        p {
+            font-size: 12px;
+        }
     }
 `;
 const Col1 = styled.div`
     flex-basis: 35%;
+    @media screen and (max-width: 800px) {
+        flex-basis: 40%;
+    }
 `;
 const Row = styled.div`
     display: flex;
@@ -64,7 +83,17 @@ const Row = styled.div`
     flex-wrap: wrap;
 `;
 const Main = styled.div`
-    padding-bottom: 10%;
+    width: 100%;
+    height: 80vh;
+    @media screen and (max-width: 1000px) {
+        height: 60vh;
+    }
+    @media screen and (max-width: 900px) {
+        height: 70vh;
+    }
+    @media screen and (max-width: 800px) {
+        height: 60vh;
+    }
 `;
 
 export default About;
