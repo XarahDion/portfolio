@@ -70,11 +70,21 @@ const Col2 = styled.div`
             font-size: 12px;
         }
     }
+    @media screen and (max-width: 700px) {
+        flex-basis: 100%;
+        text-align: right;
+        p {
+            font-size: 14px;
+        }
+    }
 `;
 const Col1 = styled.div`
     flex-basis: 35%;
     @media screen and (max-width: 800px) {
         flex-basis: 40%;
+    }
+    @media screen and (max-width: 700px) {
+        display: none;
     }
 `;
 const Row = styled.div`
@@ -86,14 +96,9 @@ const Main = styled.div`
     width: 100%;
     height: 80vh;
     @media screen and (max-width: 1000px) {
-        height: 60vh;
-    }
-    @media screen and (max-width: 900px) {
         height: 70vh;
     }
-    @media screen and (max-width: 800px) {
-        height: 60vh;
-    }
+   
 `;
 
 export default About;

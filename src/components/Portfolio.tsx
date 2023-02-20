@@ -102,6 +102,9 @@ const Description = styled.p`
     }  
     @media screen and (max-width: 900px) {
         font-size: 14px;
+    } 
+    @media screen and (max-width: 600px) {
+        font-size: 12px;
     }   
 `;
 const Layer = styled.div`
@@ -140,8 +143,15 @@ const Layer = styled.div`
             font-weight: 700;
         }
     }
-    @media screen and (max-width: 1000px) {
-        margin-bottom: 10px;
+    @media screen and (max-width: 700px) {
+        h2 {
+            font-size: 1.1em;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        h2 {
+            font-size: 0.9em;
+        }
     }
 `;
 const Img = styled.img`
@@ -180,6 +190,9 @@ const Main = styled.div`
     width: 100%;
     height: 90vh;
     @media screen and (max-width: 1000px) {
+        height: 70vh;
+    }
+    @media screen and (max-width: 900px) {
         height: auto;
     }
 `;

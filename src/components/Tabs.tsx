@@ -88,6 +88,10 @@ const Div = styled.div`
         margin-top: 8%;
         margin-bottom: 4%;
     }
+    @media screen and (max-width: 700px) {
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
 `;
 const Skills = styled.ul<TabProps>`
     color: #ababab;
@@ -118,6 +122,15 @@ const Skills = styled.ul<TabProps>`
         }
         li {
             font-size: 12px;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        text-align: left;
+        span {
+            font-size: 16px;
+        }
+        li {
+            font-size: 14px;
         }
     }
 `;

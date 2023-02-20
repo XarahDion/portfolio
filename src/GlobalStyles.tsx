@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
 :root {
-    --gradient-text: -webkit-linear-gradient(45deg, #FB286B 10%, #9000ffad  100%);
+    --gradient-text: -webkit-linear-gradient(45deg, #f55588 10%, #aa4cf2ac  100%);
     --gradient-bar: linear-gradient(103.22deg, #FB286B -13.86%, #9000FF63 99.55%);
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
 }
+
 button {
     margin-top: 2%;
     width: fit-content;
@@ -30,6 +31,9 @@ button {
     font-size: 16px;
     transition: 0.8s;
     cursor: pointer;
+    @media screen and (max-width: 800px) {
+        padding: 10px 40px;
+    }
 }
 button:hover {
     background: var(--gradient-bar);
@@ -40,6 +44,9 @@ a {
     font-size: 1.1rem;
     color: var(--font-color);
     text-decoration: inherit;
+    @media screen and (max-width: 700px) {
+        font-size: 1em;
+    }
 }
 * {
     margin: 0;
@@ -53,7 +60,10 @@ h1 {
     font-size: 2.4em;
     line-height: 1.1;
     @media screen and (max-width: 800px) {
-        font-size: 1.8em;
+        font-size: 1.7em;
+    }
+    @media screen and (max-width: 700px) {
+        font-size: 1.4em;
     }
 }
 h2 {
@@ -76,6 +86,5 @@ body::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 6px white;
     border-radius: 10px;
 }
-`
-;
+`;
 export default GlobalStyle;

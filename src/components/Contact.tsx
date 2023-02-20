@@ -13,16 +13,16 @@ const Contact = () => {
                     <Title>Contact.</Title>
                     <Icons>
                         <a href="mailto:xarahdion@gmail.com" target="_blank">
-                            <Mail size={30} color="lightgrey" />
+                            <Mail size={25} color="lightgrey" />
                         </a>
                         <a href="https://www.linkedin.com/in/xarahdion/" target="_blank">
-                            <Linkedin size={30} color="lightgrey" />
+                            <Linkedin size={25} color="lightgrey" />
                         </a>
                         <a href="https://github.com/XarahDion/" target="_blank">
-                            <GitHub size={30} color="lightgrey" />
+                            <GitHub size={25} color="lightgrey" />
                         </a>
                         <a href="https://www.facebook.com/dionxarah/" target="_blank">
-                            <Facebook size={30} color="lightgrey" />
+                            <Facebook size={25} color="lightgrey" />
                         </a>
                     </Icons>
                 </Col1>
@@ -36,14 +36,15 @@ const Contact = () => {
 
 const Icons = styled.div`
     display: flex;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 8%;
+    margin-top: 5%;
     a {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50px;
-        height: 50px;
+        width: auto;
+        height: auto;
+        padding: 4%;
         border-radius: 50%;
         border: 1px solid white;
         transition: transform 0.5s;
@@ -53,6 +54,17 @@ const Icons = styled.div`
         border: var(--gradient-bar);
         transform: translateY(-8px);
     }
+    @media screen and (max-width: 700px) {
+        justify-content: center;
+        align-items:center;
+        margin: 8%;
+        a {
+            padding: 6%;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        margin-right: 20%;
+    } 
 `;
 const Title = styled.h1`
     padding-bottom: 12px;
@@ -68,12 +80,11 @@ const Col2 = styled.div`
 `;
 const Col1 = styled.div`
     flex-basis: 35%;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 700px) {
+        align-items:center;
         display: flex;
-        align-items: center;
-        gap: 12%;
         flex-basis: 100%;
-        padding-bottom: 5%;
+        justify-content: space-between;
     }
 `;
 const Row = styled.div`
@@ -93,6 +104,7 @@ const Main = styled.div`
     @media screen and (max-width: 900px) {
         height: 80vh;
     }
+
 `;
 const Anchor = styled.h2`
     position: relative;

@@ -36,6 +36,9 @@ const Div = styled.div`
     @media screen and (max-width: 800px) {
         gap: 2em;
     }
+    @media screen and (max-width: 600px) {
+        gap: 1em;
+    }
 `;
 const Container = styled.div`
     padding: 1% 10%;

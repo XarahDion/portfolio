@@ -43,9 +43,10 @@ const Main = styled.div`
     @media screen and (max-width: 800px) {
         height: 60vh;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 600px) {
         height: 50vh;
     }
+
 `;
 
 const Img = styled.img`
@@ -67,6 +68,9 @@ const Img = styled.img`
     @media screen and (max-width: 1000px) {
         max-width: 40%;
         right: 0%;
+    }
+    @media screen and (max-width: 600px) {
+        margin-top: 10%
     }
 `;
 
