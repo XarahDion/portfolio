@@ -8,8 +8,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #000000;
+    --font-color: rgba(255, 255, 255, 0.87);
+    color: var(--font-color);
+    --background-color: #11081b;
+    background-color: var(--background-color);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -19,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
 a {
     font-weight: 500;
     font-size: 1.2rem;
-    color: #ffffff;
+    color: var(--font-color);
     text-decoration: inherit;
 }
 * {
@@ -27,7 +29,9 @@ a {
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    overflow-x: hidden;
+}
 h1 {
     font-size: 3em;
     line-height: 1.1;

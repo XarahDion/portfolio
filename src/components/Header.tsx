@@ -22,7 +22,7 @@ const Text = styled.div`
     max-width: 40%;
     h1 {
         font-size: 40px;
-        margin-top: 20px;
+        margin-top: 3%;
     }
     span {
         background: var(--gradient-text);
@@ -39,8 +39,8 @@ const Main = styled.div`
 `;
 
 const Img = styled.img`
-    margin-top: 20px;
-    max-width: 30vw;
+    margin-top: 5%;
+    max-width: 26vw;
     border-radius: 6%;
     position: absolute;
     right: 16%;

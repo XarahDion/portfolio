@@ -83,12 +83,12 @@ const Tabs = () => {
 
 const Div = styled.div`
     display: flex;
-    margin-bottom: 12px;
+    margin-bottom: 2%;
 `;
 const Skills = styled.ul<TabProps>`
     color: #ababab;
     list-style: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.3;
     display: ${(props) => (props.tab === "skills" ? "block" : "none")};
@@ -111,7 +111,7 @@ const Music = styled(Skills)`
     a {
         display: block;
         width: fit-content;
-        border: 1px solid #FB286B ;
+        box-shadow: 0 0 0 1px #FB286B ;
         padding: 10px 28px;
         border-radius: 10px;
         font-weight: 500;
@@ -120,6 +120,8 @@ const Music = styled(Skills)`
     }
     a:hover {
         background: var(--gradient-bar);
+        border: none;
+        box-shadow: 0 0 0 1px var(--gradient-bar);
     }
 `;
 const Links = styled.a`
@@ -146,7 +148,7 @@ const Links = styled.a`
     }
 `;
 const Main = styled.div`
-    margin: 20px 0 40px;
+    margin: 4% 0 0;
 `;
 
 export default Tabs;

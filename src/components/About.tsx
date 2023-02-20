@@ -14,14 +14,14 @@ const About = () => {
                         <Img src={img} alt="Xarah"></Img>
                     </Col1>
                     <Col2>
-                        <Title>About Me</Title>
-                        <Text>
+                        <Title>About Me.</Title>
+                        <p>
                             Loving both the frontend and backend, interested in learning new technologies, frameworks
                             and methods. Meticulous about writing clean code along the software design principles.
                             Focused on evaluating user needs and problems and applying actionable strategies. Curious
                             learner with an extensive collaborative and music production background. Currently learning:
                             TypeScript and AWS.
-                        </Text>
+                        </p>
                         <div>
                             <Tabs />
                         </div>
@@ -42,9 +42,6 @@ const Anchor = styled.h2`
         width: 0;
     }
 `;
-const Text = styled.p`
-    color: #ababab;
-`;
 const Img = styled.img`
     width: 100%;
     border-radius: 5%;
@@ -54,6 +51,9 @@ const Title = styled.h1`
 `;
 const Col2 = styled.div`
     flex-basis: 60%;
+    p {
+        color: #ababab;
+    }
 `;
 const Col1 = styled.div`
     flex-basis: 35%;
@@ -64,7 +64,7 @@ const Row = styled.div`
     flex-wrap: wrap;
 `;
 const Main = styled.div`
-    padding-bottom: 80px;
+    padding-bottom: 10%;
 `;
 
 export default About;

@@ -11,19 +11,19 @@ const Contact = () => {
             <Container>
                 <Row>
                     <Col1>
-                        <Title>Contact Me</Title>
+                        <Title>Contact.</Title>
                         <Icons>
                             <a href="mailto:xarahdion@gmail.com" target="_blank">
-                                <Mail size={30} color='lightgrey'/>
+                                <Mail size={30} color="lightgrey" />
                             </a>
                             <a href="https://www.linkedin.com/in/xarahdion/" target="_blank">
-                                <Linkedin size={30} color='lightgrey' />
+                                <Linkedin size={30} color="lightgrey" />
                             </a>
                             <a href="https://github.com/XarahDion/" target="_blank">
-                                <GitHub size={30} color='lightgrey' />
+                                <GitHub size={30} color="lightgrey" />
                             </a>
                             <a href="https://www.facebook.com/dionxarah/" target="_blank">
-                                <Facebook size={30} color='lightgrey' />
+                                <Facebook size={30} color="lightgrey" />
                             </a>
                         </Icons>
                     </Col1>
@@ -52,6 +52,7 @@ const Icons = styled.div`
     }
     a:hover {
         background: var(--gradient-bar);
+        border: var(--gradient-bar);
         transform: translateY(-8px);
     }
 `;
@@ -71,7 +72,7 @@ const Row = styled.div`
 `;
 const Container = styled.div``;
 const Main = styled.div`
-    padding-bottom: 80px;
+    padding: 50px 0 80px;
 `;
 const Anchor = styled.h2`
     position: relative;

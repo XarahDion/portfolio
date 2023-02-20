@@ -54,7 +54,7 @@ const Container = styled.div`
     position: sticky;
     top: 0;
     z-index: 2;
-    background-color: black;
+    background-color: var(--background-color);
     width: 100vw;
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;

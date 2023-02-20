@@ -12,7 +12,7 @@ const Portfolio = () => {
                 <span id="portfolio"></span>
             </Anchor>
             <div>
-                <h1>My Work</h1>
+                <h1>My Work.</h1>
                 <WorkList>
                     <Work>
                         <Img src={project1} />
@@ -142,9 +142,9 @@ const Work = styled.div`
 `;
 const WorkList = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 40px;
-    margin-top: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    grid-gap: 4%;
+    margin-top: 2%;
 `;
 const Main = styled.div`
     padding: 50px 0;
