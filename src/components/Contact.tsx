@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <Main>
             <Anchor>
-                <span id="portfolio"></span>
+                <span id="contact"></span>
             </Anchor>
             <Container>
                 <Row>
@@ -47,11 +47,11 @@ const Icons = styled.div`
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        border: 1px solid red;
+        border: 1px solid white;
         transition: transform 0.5s;
     }
     a:hover {
-        background-color: red;
+        background: var(--gradient-bar);
         transform: translateY(-8px);
     }
 `;

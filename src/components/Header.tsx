@@ -25,7 +25,10 @@ const Text = styled.div`
         margin-top: 20px;
     }
     span {
-        color: red;
+        background: var(--gradient-text);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 800;
     }
 `;
 const Main = styled.div`
@@ -36,6 +39,7 @@ const Main = styled.div`
 `;
 
 const Img = styled.img`
+    margin-top: 20px;
     max-width: 30vw;
     border-radius: 6%;
     position: absolute;

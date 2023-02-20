@@ -93,8 +93,11 @@ const Skills = styled.ul<TabProps>`
     line-height: 1.3;
     display: ${(props) => (props.tab === "skills" ? "block" : "none")};
     span {
-        color: #ba0e0e;
+        background: var(--gradient-text);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: 18px;
+        font-weight: 700;
     }
     li {
         margin: 10px 0;
@@ -108,7 +111,7 @@ const Music = styled(Skills)`
     a {
         display: block;
         width: fit-content;
-        border: 1px solid red;
+        border: 1px solid #FB286B ;
         padding: 10px 28px;
         border-radius: 10px;
         font-weight: 500;
@@ -116,7 +119,7 @@ const Music = styled(Skills)`
         transition: background 0.8s;
     }
     a:hover {
-        background-color: #ba0e0e;
+        background: var(--gradient-bar);
     }
 `;
 const Links = styled.a`
@@ -129,7 +132,7 @@ const Links = styled.a`
         content: "";
         width: 0%;
         height: 3px;
-        background: #ff004f;
+        background: var(--gradient-bar);
         position: absolute;
         left: 0;
         bottom: -6px;

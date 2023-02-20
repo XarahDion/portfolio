@@ -102,7 +102,7 @@ const Layer = styled.div`
     position: absolute;
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #450576e3);
     border-radius: 20px;
     left: 0;
     top: 0;
@@ -115,20 +115,20 @@ const Layer = styled.div`
     transition: height 0.8s;
     a {
         color: transparent;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 `;
 const Img = styled.img`
     max-width: 100%;
-    border-radius: 30px;
+    border-radius: 20px;
     display: block;
     transition: transform 0.7s;
-    border: 5px solid lightgray;
 `;
 const Work = styled.div`
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+    box-shadow: 1px 0px 2px 3px rgba(255, 255, 255, 0.477);
     &:hover img {
         transform: scale(1.3);
     }
