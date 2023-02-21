@@ -65,6 +65,9 @@ h1 {
     @media screen and (max-width: 700px) {
         font-size: 1.4em;
     }
+    @media screen and (max-width: 500px) {
+        font-size: 1.1em;
+    }
 }
 h2 {
     font-size: 1.3em;
@@ -82,7 +85,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-
     box-shadow: inset 0 0 6px white;
     border-radius: 10px;
 }

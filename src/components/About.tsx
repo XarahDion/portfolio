@@ -18,9 +18,8 @@ const About = () => {
                         <p>
                             Loving both the frontend and backend, interested in learning new technologies, frameworks
                             and methods. Meticulous about writing clean code along the software design principles.
-                            Focused on evaluating user needs and problems and applying actionable strategies. Curious
-                            learner with an extensive collaborative and music production background. Currently learning:
-                            TypeScript and AWS.
+                            Curious learner with an extensive collaborative and music production background. Currently
+                            learning: TypeScript and AWS.
                         </p>
                         <div>
                             <Tabs />
@@ -64,8 +63,6 @@ const Col2 = styled.div`
     }
     @media screen and (max-width: 800px) {
         flex-basis: 55%;
-    }
-    @media screen and (max-width: 800px) {
         p {
             font-size: 12px;
         }
@@ -75,6 +72,11 @@ const Col2 = styled.div`
         text-align: right;
         p {
             font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        p {
+            font-size: 12px;
         }
     }
 `;
@@ -98,7 +100,9 @@ const Main = styled.div`
     @media screen and (max-width: 1000px) {
         height: 70vh;
     }
-   
+    @media screen and (max-width: 500px) {
+        height: 60vh;
+    }
 `;
 
 export default About;

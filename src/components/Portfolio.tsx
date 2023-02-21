@@ -104,8 +104,11 @@ const Description = styled.p`
         font-size: 14px;
     } 
     @media screen and (max-width: 600px) {
-        font-size: 12px;
+        font-size: 11px;
     }   
+    @media screen and (max-width: 500px) {
+        font-size: 12px;
+    } 
 `;
 const Layer = styled.div`
     position: absolute;
@@ -145,13 +148,17 @@ const Layer = styled.div`
     }
     @media screen and (max-width: 700px) {
         h2 {
-            font-size: 1.1em;
+            font-size: 0.9em;
+        }
+        a {
+            margin-bottom: 10px;
         }
     }
     @media screen and (max-width: 700px) {
         h2 {
-            font-size: 0.9em;
+            font-size: 1.2em;
         }
+
     }
 `;
 const Img = styled.img`
@@ -175,6 +182,9 @@ const Work = styled.div`
         display: block;
         color: white;
     }
+    @media screen and (max-width: 500px) {
+        margin-bottom: 6%;
+    }
 `;
 const WorkList = styled.div`
     display: grid;
@@ -185,6 +195,10 @@ const WorkList = styled.div`
         grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
         grid-gap: 6%;
     }
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+    }
 `;
 const Main = styled.div`
     width: 100%;
@@ -193,6 +207,9 @@ const Main = styled.div`
         height: 70vh;
     }
     @media screen and (max-width: 900px) {
+        h1 {
+            padding-bottom: 2%;
+        }
         height: auto;
     }
 `;

@@ -117,20 +117,21 @@ const Skills = styled.ul<TabProps>`
         }
     }
     @media screen and (max-width: 800px) {
-        span {
-            font-size: 14px;
-        }
-        li {
-            font-size: 12px;
-        }
-    }
-    @media screen and (max-width: 800px) {
         text-align: left;
         span {
             font-size: 16px;
         }
         li {
             font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        text-align: left;
+        span {
+            font-size: 14px;
+        }
+        li {
+            font-size: 12px;
         }
     }
 `;
@@ -154,6 +155,12 @@ const Music = styled(Skills)`
         background: var(--gradient-bar);
         border: none;
         box-shadow: 0 0 0 1px var(--gradient-bar);
+    }
+    @media screen and (max-width: 500px) {
+        a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
     }
 `;
 const Links = styled.a`

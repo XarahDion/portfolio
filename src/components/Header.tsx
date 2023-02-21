@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <Main id="home">
             <Text>
-                <h3>Full Stack Web Developer</h3>
+                <h3>Full Stack Developer</h3>
                 <h1>
                     Hi, I'm <span>Xarah </span> Dion from Quebec, Canada.
                 </h1>
@@ -32,6 +32,12 @@ const Text = styled.div`
     @media screen and (max-width: 1000px) {
         max-width: 50%;
     }
+    @media screen and (max-width: 500px) {
+        max-width: 50%;
+        h3 {
+            font-size: 14px;
+        }
+    }
 `;
 const Main = styled.div`
     width: 100%;
@@ -46,7 +52,9 @@ const Main = styled.div`
     @media screen and (max-width: 600px) {
         height: 50vh;
     }
-
+    @media screen and (max-width: 500px) {
+        height: 40vh;
+    }
 `;
 
 const Img = styled.img`

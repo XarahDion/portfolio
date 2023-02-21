@@ -104,7 +104,9 @@ const Main = styled.div`
     @media screen and (max-width: 900px) {
         height: 80vh;
     }
-
+    @media screen and (max-width: 500px) {
+        height: 100vh;
+    }
 `;
 const Anchor = styled.h2`
     position: relative;
