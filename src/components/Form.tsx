@@ -4,15 +4,20 @@ const Form = () => {
     const scriptURL =
         "https://script.google.com/macros/s/AKfycbxCYUINWDjsdhfNIa_ROqRl5Hx1iGncVQ8Mn6Gli0WzO7RSVLbSk-Mm-2U1D8O2YzOA-A/exec";
     const form = document.forms["submit-to-google-sheet"];
-    
+
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+        const msg: HTMLElement | null = document.getElementById("msg");
         e.preventDefault();
         if (!form) {
-            console.log('error: form not found')
+            console.log("error: form not found");
         } else
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-            .then((response) => console.log("Success!", response))
-            .catch((error) => console.error("Error!", error.message));
+            fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                .then(() => {
+                    if (msg) {
+                        msg.innerHTML = "Message sent successfully.";
+                    }
+                })
+                .catch((error) => console.error("Error!", error.message));
     };
 
     return (
@@ -20,7 +25,10 @@ const Form = () => {
             <input type="text" name="Name" placeholder="Your Name" required />
             <input type="email" name="Email" placeholder="Your Email" required />
             <textarea name="Message" placeholder="Your Message"></textarea>
-            <button type="submit" onClick={handleClick}>Submit</button>
+            <button type="submit" onClick={handleClick}>
+                Submit
+            </button>
+            <span id="msg"></span>
         </FormDiv>
     );
 };
@@ -43,6 +51,9 @@ const FormDiv = styled.form`
         font-size: 14px;
         border-radius: 5px;
         font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    }
+    span {
+        margin-left: 20px;
     }
 `;
 export default Form;
