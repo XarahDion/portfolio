@@ -15,6 +15,10 @@ const Form = () => {
                 .then(() => {
                     if (msg) {
                         msg.innerHTML = "Message sent successfully.";
+                        setTimeout(() => {
+                            msg.innerHTML = "";
+                            form.reset();
+                        }, 5000);
                     }
                 })
                 .catch((error) => console.error("Error!", error.message));
