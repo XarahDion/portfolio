@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Form = () => {
     const scriptURL =
         "https://script.google.com/macros/s/AKfycbxCYUINWDjsdhfNIa_ROqRl5Hx1iGncVQ8Mn6Gli0WzO7RSVLbSk-Mm-2U1D8O2YzOA-A/exec";
-    const form = document.forms["submit-to-google-sheet"];
+    const form = document.forms["submit-to-google-sheet" as any];
 
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         const msg: HTMLElement | null = document.getElementById("msg");
