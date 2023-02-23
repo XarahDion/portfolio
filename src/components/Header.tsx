@@ -7,7 +7,7 @@ const Header = () => {
             <Text>
                 <h3>Full Stack Developer</h3>
                 <h1>
-                    Hi, I'm <span>Xarah </span> Dion from Quebec, Canada.
+                    Bonjour / Hi! Je suis <span>Xarah </span> Dion de Québec, Canada.
                 </h1>
             </Text>
             <Img src={img} alt="Xarah" />
@@ -78,7 +78,7 @@ const Img = styled.img`
         right: 0%;
     }
     @media screen and (max-width: 600px) {
-        margin-top: 10%
+        margin-top: 10%;
     }
 `;
 

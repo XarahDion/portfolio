@@ -16,10 +16,9 @@ const About = () => {
                     <Col2>
                         <Title>About Me.</Title>
                         <p>
-                            Loving both the frontend and backend, interested in learning new technologies, frameworks
-                            and methods. Meticulous about writing clean code along the software design principles.
-                            Curious learner with an extensive collaborative and music production background. Currently
-                            learning: TypeScript and AWS.
+                            Interested in code and new technologies and the humans behind them. Curious learner with an
+                            extensive collaborative and electronic music production background. Currently tackling:
+                            TypeScript and AWS.
                         </p>
                         <div>
                             <Tabs />
