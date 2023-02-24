@@ -1,6 +1,6 @@
 <h1 align="center">💾 Welcome to my Dev Portfolio 💾</h1>
 
-> Shout to [Avinash](https://www.youtube.com/watch?v=0YFrGy_mzjY) and [Shrikrishna](https://www.youtube.com/watch?v=o2HTkVxzivA) for their amazing tutorials I drew inspiration from.
+> Shout out to [Avinash](https://www.youtube.com/watch?v=0YFrGy_mzjY) and [Shrikrishna](https://www.youtube.com/watch?v=o2HTkVxzivA) for their amazing tutorials I drew inspiration from.
 >
 > Click on the image below to view website. Deployed with AWS => S3, ACM, CloudFront.
 >
