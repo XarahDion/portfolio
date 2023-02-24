@@ -7,7 +7,7 @@ const Header = () => {
             <Text>
                 <h3>Full Stack Developer</h3>
                 <h1>
-                    Bonjour / Hi! Je suis <span>Xarah </span> Dion de Québec, Canada.
+                    Bonjour / Hi !<br></br> Je suis <span>Xarah </span> Dion de Québec, Canada.
                 </h1>
             </Text>
             <Img src={img} alt="Xarah" />
@@ -18,7 +18,7 @@ const Header = () => {
 const Text = styled.div`
     margin-top: 20%;
     position: absolute;
-    max-width: 40%;
+    max-width: 50%;
     h1 {
         margin-top: 6%;
     }
@@ -41,19 +41,16 @@ const Text = styled.div`
 `;
 const Main = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     @media screen and (max-width: 1000px) {
         height: 70vh;
     }
-    @media screen and (max-width: 800px) {
-        height: 60vh;
-    }
-    @media screen and (max-width: 600px) {
-        height: 50vh;
+    @media screen and (max-width: 820px) and (max-height: 1200px) {
+        height: 40vh;
     }
     @media screen and (max-width: 500px) {
-        height: 40vh;
+        height: 30vh;
     }
 `;
 
@@ -62,7 +59,7 @@ const Img = styled.img`
     max-width: 35%;
     border-radius: 6%;
     position: absolute;
-    right: 12%;
+    right: 8%;
     animation: 2s ease-out 1s 1 slideInRight;
     @keyframes slideInRight {
         0% {

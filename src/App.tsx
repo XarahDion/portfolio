@@ -5,14 +5,18 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import styled from "styled-components";
 import GlobalStyle from "./GlobalStyles";
+import Logos from "./components/Logos";
 
 const App = () => {
     return (
         <>
-        <GlobalStyle />
+            <GlobalStyle />
             <Navbar />
             <Div>
                 <Header />
+            </Div>
+            <Logos />
+            <Div>
                 <About />
                 <Portfolio />
                 <Contact />

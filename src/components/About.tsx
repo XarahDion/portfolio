@@ -16,9 +16,10 @@ const About = () => {
                     <Col2>
                         <Title>About Me.</Title>
                         <p>
-                            Interested in code and new technologies and the humans behind them. Curious learner with an
-                            extensive collaborative and electronic music production background. Currently tackling:
-                            TypeScript and AWS.
+                            Interested in code, new technologies and the humans behind them. Discovered programming with
+                            Python, specialized in JavaScript for Web Dev. Curious learner with an extensive
+                            collaborative and electronic music production background. Currently tackling: TypeScript and
+                            AWS.
                         </p>
                         <div>
                             <Tabs />
@@ -95,12 +96,15 @@ const Row = styled.div`
 `;
 const Main = styled.div`
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     @media screen and (max-width: 1000px) {
         height: 70vh;
     }
+    @media screen and (max-width: 820px) and (max-height: 1200px) {
+        height: 50vh;
+    }
     @media screen and (max-width: 500px) {
-        height: 60vh;
+        height: 50vh;
     }
 `;
 

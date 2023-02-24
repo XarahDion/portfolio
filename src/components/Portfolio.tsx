@@ -23,10 +23,10 @@ const Portfolio = () => {
                                 map.
                             </Description>
                             <a href="https://github.com/XarahDion/final-project" target="_blank">
-                                <GitHub size={28} />
+                                <GitHub size={28} /><div>Code</div>
                             </a>
                             <a href="https://www.earth-trotter.xarahdion.com/" target="_blank">
-                                <ExternalLink size={28} />
+                                <ExternalLink size={28} /><div>Demo</div>
                             </a>
                         </Layer>
                     </Work>
@@ -38,10 +38,10 @@ const Portfolio = () => {
                                 E-commerce MERN stack app, by Anthony Kameka, Mariana Oka, Francis Vézina and I.
                             </Description>
                             <a href="https://github.com/XarahDion/e-commerce" target="_blank">
-                                <GitHub size={28} />
+                                <GitHub size={28} /><div>Code</div>
                             </a>
                             <a href="https://e-commerce-zl6k.onrender.com/" target="_blank">
-                                <ExternalLink size={28} />
+                                <ExternalLink size={28} /><div>Demo</div>
                             </a>
                         </Layer>
                     </Work>
@@ -53,10 +53,10 @@ const Portfolio = () => {
                                 A fully responsive landing page built along modern UI/UX standards with pure CSS3.
                             </Description>
                             <a href="https://github.com/XarahDion/landing-page" target="_blank">
-                                <GitHub size={28} />
+                                <GitHub size={28} /><div>Code</div>
                             </a>
                             <a href="https://landing-page-u316.onrender.com/" target="_blank">
-                                <ExternalLink size={28} />
+                                <ExternalLink size={28} /><div>Demo</div>
                             </a>
                         </Layer>
                     </Work>
@@ -68,13 +68,13 @@ const Portfolio = () => {
                                 A clone of The Weather Network's weather app built with React Native and Expo.
                             </Description>
                             <a href="https://github.com/XarahDion/current-weather-app" target="_blank">
-                                <GitHub size={28} />
+                                <GitHub size={28} /><div>Code</div>
                             </a>
                             <a
                                 href="https://appetize.io/embed/8bnmakzrptf1hv9dq7v7bnteem?autoplay=false&debug=true&device=iphone12&deviceColor=black&embed=true&orientation=portrait&scale=73&screenOnly=false&xDocMsg=true&xdocMsg=true&params=%7B%22EXDevMenuDisableAutoLaunch%22%3Atrue%2C%22EXKernelLaunchUrlDefaultsKey%22%3A%22exp%3A%2F%2Fexp.host%2F%40xarahdion%2F8929c3%2B3Fqz_6piO5%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D"
                                 target="_blank"
                             >
-                                <ExternalLink size={28} />
+                                <ExternalLink size={28} /><div>Demo</div>
                             </a>
                         </Layer>
                     </Work>
@@ -125,9 +125,15 @@ const Layer = styled.div`
     padding: 0 20px;
     text-align: center;
     transition: height 0.8s;
+    div {
+        font-size: 0.8rem;
+        line-height: 0.6;
+    }
     a {
         color: transparent;
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
     }
     @media screen and (max-width: 1250px) {
         h2 {
@@ -151,14 +157,8 @@ const Layer = styled.div`
             font-size: 0.9em;
         }
         a {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
-    }
-    @media screen and (max-width: 700px) {
-        h2 {
-            font-size: 1.2em;
-        }
-
     }
 `;
 const Img = styled.img`
