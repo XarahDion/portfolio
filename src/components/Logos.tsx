@@ -193,12 +193,9 @@ const Slide = styled.div`
         width: 100%;
         height: 100%;
     }
-    @media screen and (max-width: 700px) {
-        
-    }
 `;
 const Slider = styled.div`
-overflow: hidden;
+    overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
