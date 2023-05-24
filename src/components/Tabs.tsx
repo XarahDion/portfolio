@@ -25,7 +25,7 @@ const Tabs = () => {
                     Education
                 </Links>
                 <Links id="music" onClick={(e) => openTab(e)}>
-                    Music Production
+                    Music
                 </Links>
             </Div>
             <Skills tab={tabState}>

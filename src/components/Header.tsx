@@ -5,7 +5,6 @@ const Header = () => {
     return (
         <Main id="home">
             <Text>
-                <h3>Full Stack Developer</h3>
                 <h1>
                     Bonjour / Hi !<br></br> Je suis <span>Xarah </span> Dion de Québec, Canada.
                 </h1>

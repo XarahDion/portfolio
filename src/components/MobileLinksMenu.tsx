@@ -27,10 +27,10 @@ const MenuContainer = styled.div`
     text-align: end;
     background: black;
     box-shadow: inset 0 0 6px white;
-    padding: 2rem;
+    padding: 1rem 2rem 1rem 3rem;
     position: absolute;
     right: 0;
-    top: 1.2em;
+    top: 1.4em;
     border-radius: 4%;
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
